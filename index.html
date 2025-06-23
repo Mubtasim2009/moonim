@@ -17,40 +17,53 @@
     font-family: 'Outfit', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     word-break: break-word;
     overflow-wrap: break-word;
-  }
-  body {
+  }  body {
     font-weight: 400;
     letter-spacing: -0.015em;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
   }
-  h1 {
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: -1;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+  }h1 {
     font-family: 'Outfit', 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: -0.03em;
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);
     animation: fadeInUp 1s ease-out;
-    margin-top: 0.2rem;
-    margin-bottom: 0.5rem;
+    margin: 0 auto 1rem auto;
     text-align: left;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding: 0 2.5rem;
   }  header p {
     font-family: 'Inter', 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 1.7;
     animation: fadeInUp 1s ease-out 0.3s both;
-    backdrop-filter: blur(10px);
-    background: rgba(255,255,255,0.1);
-    border-radius: 24px;
-    padding: 3rem;
-    border: 1px solid rgba(255,255,255,0.2);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.08);
+    border-radius: 32px;
+    padding: 2.5rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.08);
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
+    margin: 0 auto 3rem auto;
   }
   @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
@@ -61,13 +74,15 @@
     position: relative;
     overflow: hidden;
     display: inline-block;
-    width: 3em;
-    height: 3em;
-    line-height: 3em;
+    width: 3.5em;
+    height: 3.5em;
+    line-height: 3.5em;
     text-align: center;
     border: 1px solid rgba(255,255,255,0.2);
     color: inherit;
     text-decoration: none;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.05);
   }
   .icons li a i {
     font-size: 1.25em;
@@ -104,16 +119,15 @@
   .icons li a:hover::before {
     left: 100%;
   }  footer {
-    backdrop-filter: blur(10px);
-    background: rgba(255,255,255,0.1);
-    border-radius: 24px;
-    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.08);
+    border-radius: 32px;
+    border: 1px solid rgba(255,255,255,0.15);
     animation: slideInUp 1s ease-out 0.6s both;
-    padding: 3rem;
+    padding: 2.5rem;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.08);
   }
   @keyframes slideInUp {
     from { opacity: 0; transform: translateY(50px); }
@@ -143,29 +157,28 @@
     font-weight: 300;
     font-size: 0.9em;
   }  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+    }
     body, p {
       font-size: 1.05em;
       line-height: 1.5;
-      padding: 0 1rem;
     }
     header p {
-      padding: 2rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      padding: 1.5rem;
+      margin: 0 auto 2rem auto;
     }
     h1 {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding: 0 1.5rem;
+      margin-bottom: 1rem;
     }
     footer {
-      padding: 2rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      padding: 1.5rem;
+      margin: 0 auto;
     }
-  }
-</style>
-	</head>
+  }</style>	</head>
 	<body class="is-preload">
+		<div class="container">
 <!-- Header -->
 			<header id="header">
 				<h1>About me</h1>
@@ -191,8 +204,8 @@
 				  <li>&copy; Muhammad Mubtasim Moonim Khan</li>
 				  <li><a href="http://cloudflare.com" target="_blank" rel="noopener noreferrer">[Hosted by Cloudflare Pages]</a></li>
 				  <li>Credits: <a href="http://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
-				</ul>
-			</footer>
+				</ul>			</footer>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/main.js"></script>
