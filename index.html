@@ -175,8 +175,8 @@
     top: 24px;
     right: 32px;
     z-index: 1000;
-    background: #4F8EF7;
-    color: #fff;
+    background: rgba(255,255,255,0.08);  /* translucent, matches other elements */
+    color: #4F8EF7;                      /* match site theme or #fff for white */
     font-family: 'Outfit', 'Inter', 'Poppins', sans-serif;
     font-weight: 600;
     padding: 0.7em 1.6em;
@@ -185,10 +185,13 @@
     box-shadow: 0 4px 12px rgba(79,142,247,0.12);
     transition: background 0.2s;
     font-size: 1em;
-  }
-  #old-site-btn:hover {
-    background: #3376CC;
-  }
+    border: 1px solid rgba(255,255,255,0.15);     /* subtle border like other elements */
+    backdrop-filter: blur(10px);                  /* optional: for extra glassy effect */
+}
+#old-site-btn:hover {
+    background: rgba(79,142,247,0.13);  /* slightly more visible on hover */
+    color: #3376CC;
+}
   @media (max-width:600px) {
     #old-site-btn {
       top: 10px;
