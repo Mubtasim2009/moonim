@@ -16,10 +16,10 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 		<style>
+  body {
     font-family: 'Outfit', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     word-break: break-word;
     overflow-wrap: break-word;
-  }  body {
     font-weight: 400;
     letter-spacing: -0.015em;
     min-height: 100vh;
@@ -175,8 +175,8 @@
     top: 24px;
     right: 32px;
     z-index: 1000;
-    background: rgba(255,255,255,0.08);  /* translucent, matches other elements */
-    color: #4F8EF7;                      /* match site theme or #fff for white */
+    background: rgba(79,142,247,0.15);
+    color: #fff;
     font-family: 'Outfit', 'Inter', 'Poppins', sans-serif;
     font-weight: 600;
     padding: 0.7em 1.6em;
@@ -185,13 +185,12 @@
     box-shadow: 0 4px 12px rgba(79,142,247,0.12);
     transition: background 0.2s;
     font-size: 1em;
-    border: 1px solid rgba(255,255,255,0.15);     /* subtle border like other elements */
-    backdrop-filter: blur(10px);                  /* optional: for extra glassy effect */
-}
-#old-site-btn:hover {
-    background: rgba(79,142,247,0.13);  /* slightly more visible on hover */
-    color: #3376CC;
-}
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(20px);
+  }
+  #old-site-btn:hover {
+    background: rgba(51,118,204,0.25);
+  }
   @media (max-width:600px) {
     #old-site-btn {
       top: 10px;
@@ -204,17 +203,34 @@
 	</head>
 	<body class="is-preload">
 		<!-- Top right corner button -->
-		<a href="https://old.moonim.me" target="_blank" rel="noopener noreferrer" id="old-site-btn">
-  		Having Loading issues? Visit the old site!
+		<a href="https://moonim.me" target="_blank" rel="noopener noreferrer" id="old-site-btn">
+  		Having Loading issue? Visit old site
 		</a>
 		<div class="container">
 <!-- Header -->
 			<header id="header">
 				<h1>About me</h1>
 				<p>
-				Hey, I’m Mubtasim Moonim Khan from Bangladesh. I love digging into how tech works—messing with systems, hosting servers, and tweaking setups to make things better. I’m an SSC 2026 candidate, and when I’m not studying, I’m deep into cybersecurity, OS setups, and server tinkering. I also jump into WordPress when I need to get a site up quick. Music’s a big part of my vibe — I’m all about pop, EDM, and chill R&B, with favourites like The Weeknd, Marshmello, Madison Beer, and Luísa Sonza. I’m always eager to try new ideas, learn from others, and help out wherever I can. I’m excited to dive deeper into cybersecurity and tech stuff ahead..
+				Hi, I’m Mubtasim Moonim Khan from Bangladesh. I enjoy exploring how technology works behind the scenes—whether that’s managing servers, optimizing setups, or building projects to improve performance. I’m an SSC 2026 candidate with a strong interest in cybersecurity, operating system configurations, and server management. Occasionally, I use WordPress to quickly deploy websites or test ideas.
+				<br><br>
+				I’m always listening to music—whether I’m working, relaxing, or exploring new artists. I love modern sounds in pop, EDM, and chill R&B, with favorites like The Weeknd, Marshmello, Madison Beer, and Luísa Sonza. I’m also a passionate Formula 1 fan and proudly support Red Bull Racing.
+				<br><br>
+				I’m always open to learning new skills, collaborating with others, and contributing wherever I can. Looking ahead, I plan to deepen my expertise in cybersecurity and other tech-related fields.
 				</p>
 			</header>
+
+<!-- Skills in Progress Section -->
+<section id="skills" style="max-width:1200px;margin:0 auto 3rem auto;padding:2.5rem;background:rgba(255,255,255,0.08);border-radius:32px;border:1px solid rgba(255,255,255,0.15);box-shadow:0 20px 40px rgba(0,0,0,0.1),0 8px 16px rgba(0,0,0,0.08);backdrop-filter:blur(20px);font-family:'Inter','Poppins',sans-serif;animation:fadeInUp 1s ease-out 0.3s both;" class="fadeInUp">
+  <h2 style="font-family:'Outfit','Inter',sans-serif;font-weight:700;letter-spacing:-0.02em;margin-top:0;text-shadow:0 2px 4px rgba(0,0,0,0.1);">Skills in Progress</h2>
+  <ul style="font-size:1.1em;line-height:1.7;margin-bottom:1.5em;">
+    <li><strong>Python Programming</strong> — Improving coding proficiency and building projects</li>
+    <li><strong>Cybersecurity Basics</strong> — Studying network security, vulnerabilities, and ethical hacking</li>
+    <li><strong>HTML (Web Development)</strong> — Beginning to learn website structure and design</li>
+    <li><strong>Server Management & Tinkering</strong> — Gaining hands-on experience with hosting, servers, and Linux</li>
+    <li><strong>English Communication</strong> — Working on advanced writing and speaking skills</li>
+  </ul>
+  <div style="font-size:1.05em;"><strong>On the Radar:</strong><br>Rust Language — Planning to start learning soon</div>
+</section>
 
 		<!-- Signup Form -->
 			
