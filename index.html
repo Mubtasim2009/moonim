@@ -31,9 +31,11 @@
   .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2.5rem;
     box-sizing: border-box;
-  }h1 {
+  }
+  
+  h1 {
     font-family: 'Outfit', 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: -0.03em;
@@ -43,7 +45,9 @@
     text-align: left;
     max-width: 1200px;
     padding: 0 2.5rem;
-  }  header p {
+  }
+  
+  header p {
     font-family: 'Inter', 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 1.7;
@@ -60,7 +64,9 @@
   @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
-  }  .icons li a {
+  }
+  
+  .icons li a {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
     position: relative;
@@ -81,7 +87,9 @@
   }
   .icons li a .label {
     display: none;
-  }  .icons {
+  }
+  
+  .icons {
     text-align: center;
     margin: 1rem 0;
     display: flex;
@@ -110,7 +118,9 @@
   }
   .icons li a:hover::before {
     left: 100%;
-  }  footer {
+  }
+  
+  footer {
     backdrop-filter: blur(20px);
     background: rgba(255,255,255,0.08);
     border-radius: 32px;
@@ -141,16 +151,143 @@
     left: 0;
     background: currentColor;
     transition: width 0.3s ease;
-  }  .copyright a:hover::after {
+  }
+  
+  .copyright a:hover::after {
     width: 100%;
-  }  .copyright {
+  }
+  
+  .copyright {
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 0.9em;
-  }  @media (max-width: 600px) {
+  }
+  
+  .brand-logo {
+    text-align: center;
+    margin: 2rem 0 1.5rem 0;
+    animation: fadeInUp 1s ease-out 0.9s both;
+  }
+  
+  .brand-text {
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #4f8ef7; /* Fallback color */
+    background: linear-gradient(135deg, #4f8ef7, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: inline-block;
+  }
+  
+  /* Fallback for browsers that don't support background-clip: text */
+  @supports not (-webkit-background-clip: text) {
+    .brand-text {
+      color: #4f8ef7;
+      -webkit-text-fill-color: initial;
+    }
+  }
+  
+  .brand-text:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 12px rgba(79, 142, 247, 0.3));
+  }
+  
+  /* View More Certificates button hover effects */
+  .view-more-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: rgba(79, 142, 247, 0.15);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    border: 1px solid rgba(79, 142, 247, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(79, 142, 247, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .view-more-btn:hover {
+    background: rgba(79, 142, 247, 0.25);
+    border-color: rgba(79, 142, 247, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(79, 142, 247, 0.2);
+    color: #fff;
+  }
+  
+  .view-more-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s;
+  }
+  
+  .view-more-btn:hover::before {
+    left: 100%;
+  }
+  
+  /* Certifications section styling */
+  .certifications {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .certifications h3 {
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .badge {
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .badge img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+  }
+  
+  .badge:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+
+  @media (max-width: 600px) {
     .container {
-      padding: 1rem;
+      padding: 1.5rem;
+      margin-top: 60px; /* Add space for the button */
     }
     body, p {
       font-size: 1.05em;
@@ -167,8 +304,80 @@
     footer {
       padding: 1.5rem;
       margin: 0 auto;
+      border-radius: 24px;
+    }
+    
+    #skills {
+      padding: 1.5rem !important;
+      border-radius: 24px !important;
+      margin: 0 auto 1.5rem auto !important;
+    }
+    
+    .certifications {
+      margin: 1.5rem 0;
+    }
+    
+    .badges {
+      gap: 0.8rem;
+    }
+    
+    .badge img {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .brand-logo {
+      margin: 1.5rem 0 1rem 0;
+    }
+    
+    .brand-text {
+      font-size: 1.8em;
     }
   }
+  
+  /* Additional responsive breakpoints for footer */
+  @media (min-width: 601px) and (max-width: 768px) {
+    .container {
+      padding: 2rem;
+    }
+    footer {
+      padding: 2rem;
+      border-radius: 28px;
+    }
+    
+    #skills {
+      padding: 2rem !important;
+      border-radius: 28px !important;
+      margin: 0 auto 1.75rem auto !important;
+    }
+    
+    .badge img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      padding: 2.25rem;
+    }
+    footer {
+      padding: 2.25rem;
+      border-radius: 30px;
+    }
+    
+    #skills {
+      padding: 2.25rem !important;
+      border-radius: 30px !important;
+      margin: 0 auto 1.85rem auto !important;
+    }
+    
+    .badge img {
+      width: 75px;
+      height: 75px;
+    }
+  }
+  
   /* Added styles for the top right button */
   #old-site-btn {
     position: fixed;
@@ -191,12 +400,17 @@
   #old-site-btn:hover {
     background: rgba(51,118,204,0.25);
   }
+  
   @media (max-width:600px) {
     #old-site-btn {
-      top: 10px;
-      right: 10px;
-      font-size: 0.95em;
-      padding: 0.5em 1em;
+      top: 15px;
+      right: 15px;
+      left: 15px;
+      font-size: 0.85em;
+      padding: 0.6em 1em;
+      text-align: center;
+      width: auto;
+      box-sizing: border-box;
     }
   }
   </style>
@@ -220,7 +434,7 @@
 			</header>
 
 <!-- Skills in Progress Section -->
-<section id="skills" style="max-width:1200px;margin:0 auto 3rem auto;padding:2.5rem;background:rgba(255,255,255,0.08);border-radius:32px;border:1px solid rgba(255,255,255,0.15);box-shadow:0 20px 40px rgba(0,0,0,0.1),0 8px 16px rgba(0,0,0,0.08);backdrop-filter:blur(20px);font-family:'Inter','Poppins',sans-serif;animation:fadeInUp 1s ease-out 0.3s both;" class="fadeInUp">
+<section id="skills" style="max-width:1200px;margin:0 auto 2rem auto;padding:2.5rem;background:rgba(255,255,255,0.08);border-radius:32px;border:1px solid rgba(255,255,255,0.15);box-shadow:0 20px 40px rgba(0,0,0,0.1),0 8px 16px rgba(0,0,0,0.08);backdrop-filter:blur(20px);font-family:'Inter','Poppins',sans-serif;animation:fadeInUp 1s ease-out 0.3s both;" class="fadeInUp">
   <h2 style="font-family:'Outfit','Inter',sans-serif;font-weight:700;letter-spacing:-0.02em;margin-top:0;text-shadow:0 2px 4px rgba(0,0,0,0.1);">Skills in Progress</h2>
   <ul style="font-size:1.1em;line-height:1.7;margin-bottom:1.5em;">
     <li><strong>Python Programming</strong> — Improving coding proficiency and building projects</li>
@@ -235,21 +449,66 @@
 		<!-- Signup Form -->
 			
 
-		<!-- Footer -->			<footer id="footer">				<ul class="icons">
-					<li><a href="https://x.com/MubtasimK" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i><span class="label">Twitter</span></a></li>
-					<li><a href="https://www.instagram.com/moonim.applepie/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i><span class="label">Instagram</span></a></li>
-					<li><a href="https://www.facebook.com/moonim.applepie/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i><span class="label">Facebook</span></a></li>
-					<li><a href="https://github.com/Mubtasim2009" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:mubtasim32@gmail.com"><i class="fas fa-envelope"></i><span class="label">Email</span></a></li>
-				</ul>
-				<div style="text-align: center; margin: 1rem 0;">
-					<img src="https://i.ibb.co.com/5XpqdCF4/Untitled-2-2.png" width="160" height="37" alt=""/>
+		<!-- Footer -->
+		<footer id="footer">
+			<!-- Social Media Links -->
+			<ul class="icons">
+				<li><a href="https://x.com/MubtasimK" target="_blank" rel="noopener noreferrer">
+					<i class="fab fa-twitter"></i>
+					<span class="label">Twitter</span>
+				</a></li>
+				<li><a href="https://www.instagram.com/moonim.applepie/" target="_blank" rel="noopener noreferrer">
+					<i class="fab fa-instagram"></i>
+					<span class="label">Instagram</span>
+				</a></li>
+				<li><a href="https://www.facebook.com/moonim.applepie/" target="_blank" rel="noopener noreferrer">
+					<i class="fab fa-facebook"></i>
+					<span class="label">Facebook</span>
+				</a></li>
+				<li><a href="https://github.com/Mubtasim2009" target="_blank" rel="noopener noreferrer">
+					<i class="fab fa-github"></i>
+					<span class="label">GitHub</span>
+				</a></li>
+				<li><a href="mailto:mubtasim32@gmail.com">
+					<i class="fas fa-envelope"></i>
+					<span class="label">Email</span>
+				</a></li>
+			</ul>
+			
+			<!-- Logo/Brand Image -->
+			<div class="brand-logo">
+				<img src="https://i.ibb.co/5XpqdCF4/Untitled-2-2.png" alt="Moonim Logo">
+			</div>
+			
+			<!-- Certifications -->
+			<div class="certifications">
+				<h3>Certifications & Achievements</h3>
+				<div class="badges">
+					<a href="https://www.credly.com/badges/07e30f3e-e251-4f4e-8199-d87b33505e4f/public_url" target="_blank" rel="noopener noreferrer" class="badge">
+						<img src="https://images.credly.com/size/680x680/images/e2d12302-10f9-40d4-8ff1-066a7008b61d/blob" alt="Certification Badge">
+					</a>
+					<a href="https://www.credly.com/badges/4d96f06f-ff36-48bf-afb7-db9505b06bd6/public_url" target="_blank" rel="noopener noreferrer" class="badge">
+						<img src="https://images.credly.com/size/680x680/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" alt="Certification Badge">
+					</a>
+					<a href="https://www.credly.com/badges/8b8d93b6-7257-4591-9c78-cd7a4aa40199/public_url" target="_blank" rel="noopener noreferrer" class="badge">
+						<img src="https://images.credly.com/size/220x220/images/19e742ef-13be-4d26-87ed-ac8f5fd0643c/image.png" alt="Certification Badge">
+					</a>
+					<a href="https://www.credly.com/badges/cb737c42-8fee-44c3-ab15-2de8f7683489/public_url" target="_blank" rel="noopener noreferrer" class="badge">
+						<img src="https://images.credly.com/size/160x160/images/50b96632-6cbb-40b7-ac0e-b83f49ff7f94/image.png" alt="Certification Badge">
+					</a>
 				</div>
-				<ul class="copyright">
-				  <li>&copy; Muhammad Mubtasim Moonim Khan</li>
-				  <li><a href="http://cloudflare.com" target="_blank" rel="noopener noreferrer">[Hosted by Cloudflare Pages]</a></li>
-				  <li>Credits: <a href="http://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
-				</ul>			</footer>
+				<div style="margin-top: 1.5rem; text-align: center;">
+					<a href="https://moonim.me/certificates" target="_blank" rel="noopener noreferrer" class="view-more-btn">View More Certificates</a>
+				</div>
+			</div>
+			
+			<!-- Copyright Information -->
+			<ul class="copyright">
+				<li>&copy; Muhammad Mubtasim Moonim Khan</li>
+				<li><a href="https://cloudflare.com" target="_blank" rel="noopener noreferrer">[Hosted by Cloudflare Pages]</a></li>
+				<li>Credits: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
+			</ul>
+		</footer>
 		</div>
 
 		<!-- Scripts -->
