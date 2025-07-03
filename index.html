@@ -1,518 +1,563 @@
 <!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Muhammad Mubtasim Moonim Khan</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" href="https://i.ibb.co/K1yc7rM/m.png" type="image/png">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		<style>
-  body {
-    font-family: 'Outfit', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    font-weight: 400;
-    letter-spacing: -0.015em;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2.5rem;
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    font-family: 'Outfit', 'Inter', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    animation: fadeInUp 1s ease-out;
-    margin: 0 auto 1rem auto;
-    text-align: left;
-    max-width: 1200px;
-    padding: 0 2.5rem;
-  }
-  
-  header p {
-    font-family: 'Inter', 'Poppins', sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    animation: fadeInUp 1s ease-out 0.3s both;
-    backdrop-filter: blur(20px);
-    background: rgba(255,255,255,0.08);
-    border-radius: 32px;
-    padding: 2.5rem;
-    border: 1px solid rgba(255,255,255,0.15);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.08);
-    max-width: 1200px;
-    margin: 0 auto 3rem auto;
-  }
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  .icons li a {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    width: 3.5em;
-    height: 3.5em;
-    line-height: 3.5em;
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.2);
-    color: inherit;
-    text-decoration: none;
-    backdrop-filter: blur(10px);
-    background: rgba(255,255,255,0.05);
-  }
-  .icons li a i {
-    font-size: 1.25em;
-  }
-  .icons li a .label {
-    display: none;
-  }
-  
-  .icons {
-    text-align: center;
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .icons li {
-    display: inline-block;
-    margin: 0;
-  }
-  .icons li a:hover {
-    transform: translateY(-3px) scale(1.1);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  }
-  .icons li a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s;
-  }
-  .icons li a:hover::before {
-    left: 100%;
-  }
-  
-  footer {
-    backdrop-filter: blur(20px);
-    background: rgba(255,255,255,0.08);
-    border-radius: 32px;
-    border: 1px solid rgba(255,255,255,0.15);
-    animation: slideInUp 1s ease-out 0.6s both;
-    padding: 2.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.08);
-  }
-  @keyframes slideInUp {
-    from { opacity: 0; transform: translateY(50px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .copyright a {
-    transition: all 0.3s ease;
-    position: relative;
-  }
-  .copyright a:hover {
-    transform: translateX(5px);
-  }
-  .copyright a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background: currentColor;
-    transition: width 0.3s ease;
-  }
-  
-  .copyright a:hover::after {
-    width: 100%;
-  }
-  
-  .copyright {
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 0.9em;
-  }
-  
-  .brand-logo {
-    text-align: center;
-    margin: 2rem 0 1.5rem 0;
-    animation: fadeInUp 1s ease-out 0.9s both;
-  }
-  
-  .brand-text {
-    font-family: 'Outfit', 'Inter', sans-serif;
-    font-size: 2.2em;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #4f8ef7; /* Fallback color */
-    background: linear-gradient(135deg, #4f8ef7, #3b82f6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, filter 0.3s ease;
-    display: inline-block;
-  }
-  
-  /* Fallback for browsers that don't support background-clip: text */
-  @supports not (-webkit-background-clip: text) {
-    .brand-text {
-      color: #4f8ef7;
-      -webkit-text-fill-color: initial;
+<head>
+  <title>Muhammad Mubtasim Moonim Khan</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="icon" href="https://i.ibb.co/K1yc7rM/m.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body { height: 100%; margin: 0; padding: 0; }
+    body, #bg { background: #111; }
+    body {
+      font-family: 'Outfit', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      color: #fff;
+      font-weight: 400;
+      letter-spacing: -0.015em;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 2;
+      word-break: break-word;
+      overflow-wrap: break-word;
     }
-  }
-  
-  .brand-text:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 4px 12px rgba(79, 142, 247, 0.3));
-  }
-  
-  /* View More Certificates button hover effects */
-  .view-more-btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: rgba(79, 142, 247, 0.15);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-family: 'Outfit', 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 0.9em;
-    border: 1px solid rgba(79, 142, 247, 0.3);
-    backdrop-filter: blur(10px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 15px rgba(79, 142, 247, 0.1);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .view-more-btn:hover {
-    background: rgba(79, 142, 247, 0.25);
-    border-color: rgba(79, 142, 247, 0.5);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(79, 142, 247, 0.2);
-    color: #fff;
-  }
-  
-  .view-more-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-    transition: left 0.6s;
-  }
-  
-  .view-more-btn:hover::before {
-    left: 100%;
-  }
-  
-  /* Certifications section styling */
-  .certifications {
-    margin: 2rem 0;
-    text-align: center;
-  }
-  
-  .certifications h3 {
-    font-family: 'Outfit', 'Inter', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .badges {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 1.5rem 0;
-  }
-  
-  .badge {
-    display: inline-block;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  }
-  
-  .badge img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    display: block;
-    border-radius: 12px;
-  }
-  
-  .badge:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  }
-
-  @media (max-width: 600px) {
     .container {
-      padding: 1.5rem;
-      margin-top: 60px; /* Add space for the button */
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 3;
     }
-    body, p {
-      font-size: 1.05em;
-      line-height: 1.5;
+    #bg {
+      transition: opacity 2s ease-in-out;
+      height: 100%;
+      left: 0;
+      opacity: 0.375;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+    #bg div {
+      transition: opacity 1.2s ease;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      visibility: hidden;
+      width: 150%;
+      will-change: opacity, transform;
+      transform: translateX(0);
+    }
+    #bg div.visible {
+      opacity: 1;
+      visibility: visible;
+      z-index: 1;
+      animation: bgSlide 20s linear infinite;
+    }
+    #bg div.visible.top { z-index: 2; }
+    @keyframes bgSlide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-25%); }
+    }
+    body.is-preload #bg { opacity: 0; }
+    h1 {
+      font-family: 'Outfit', 'Inter', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      animation: fadeInUp 1s ease-out;
+      margin: 0 auto 1rem auto;
+      text-align: left;
+      max-width: 1200px;
+      padding: 0 2rem;
     }
     header p {
-      padding: 1.5rem;
+      font-family: 'Inter', 'Poppins', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
+      animation: fadeInUp 1s ease-out 0.3s both;
+      backdrop-filter: blur(20px);
+      background: rgba(21,23,38,0.39);
+      border-radius: 32px;
+      padding: 2.5rem; /* ADDED: more padding for About me */
+      border: 1px solid rgba(255,255,255,0.09);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.10), 0 8px 16px rgba(0,0,0,0.06);
+      max-width: 1200px;
       margin: 0 auto 2rem auto;
+      color: #fff;
     }
-    h1 {
-      padding: 0 1.5rem;
-      margin-bottom: 1rem;
+    .is-preload header p {
+      animation: none !important;
+      opacity: 0;
+      transform: translateY(30px);
     }
-    footer {
-      padding: 1.5rem;
-      margin: 0 auto;
-      border-radius: 24px;
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    
     #skills {
-      padding: 1.5rem !important;
-      border-radius: 24px !important;
-      margin: 0 auto 1.5rem auto !important;
-    }
-    
-    .certifications {
-      margin: 1.5rem 0;
-    }
-    
-    .badges {
-      gap: 0.8rem;
-    }
-    
-    .badge img {
-      width: 60px;
-      height: 60px;
-    }
-    
-    .brand-logo {
-      margin: 1.5rem 0 1rem 0;
-    }
-    
-    .brand-text {
-      font-size: 1.8em;
-    }
-  }
-  
-  /* Additional responsive breakpoints for footer */
-  @media (min-width: 601px) and (max-width: 768px) {
-    .container {
+      max-width: 1200px;
+      margin: 0 auto 2rem auto;
       padding: 2rem;
+      background: rgba(21,23,38,0.39);
+      border-radius: 32px;
+      border: 1px solid rgba(255,255,255,0.09);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.10),0 8px 16px rgba(0,0,0,0.06);
+      color: #fff;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease-out 0.5s both;
     }
-    footer {
-      padding: 2rem;
-      border-radius: 28px;
+    .is-preload #skills {
+      animation: none !important;
+      opacity: 0;
+      transform: translateY(30px);
     }
-    
-    #skills {
-      padding: 2rem !important;
-      border-radius: 28px !important;
-      margin: 0 auto 1.75rem auto !important;
+    #skills h2 {
+      font-family:'Outfit','Inter',sans-serif;
+      font-weight:700;
+      letter-spacing:-0.02em;
+      margin-top:0;
+      text-shadow:0 2px 4px rgba(0,0,0,0.13);
+      color:#e0eaff;
     }
-    
-    .badge img {
-      width: 70px;
-      height: 70px;
+    #skills ul {
+      font-size:1.1em;
+      line-height:1.7;
+      margin-bottom:1.5em;
     }
-  }
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-      padding: 2.25rem;
-    }
-    footer {
-      padding: 2.25rem;
-      border-radius: 30px;
-    }
-    
-    #skills {
-      padding: 2.25rem !important;
-      border-radius: 30px !important;
-      margin: 0 auto 1.85rem auto !important;
-    }
-    
-    .badge img {
-      width: 75px;
-      height: 75px;
-    }
-  }
-  
-  /* Added styles for the top right button */
-  #old-site-btn {
-    position: fixed;
-    top: 24px;
-    right: 32px;
-    z-index: 1000;
-    background: rgba(79,142,247,0.15);
-    color: #fff;
-    font-family: 'Outfit', 'Inter', 'Poppins', sans-serif;
-    font-weight: 600;
-    padding: 0.7em 1.6em;
-    border-radius: 2em;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(79,142,247,0.12);
-    transition: background 0.2s;
-    font-size: 1em;
-    border: 1px solid rgba(255,255,255,0.15);
-    backdrop-filter: blur(20px);
-  }
-  #old-site-btn:hover {
-    background: rgba(51,118,204,0.25);
-  }
-  
-  @media (max-width:600px) {
-    #old-site-btn {
-      top: 15px;
-      right: 15px;
-      left: 15px;
-      font-size: 0.85em;
-      padding: 0.6em 1em;
+    #footer {
+      transition: all 0.3s ease;
+      backdrop-filter: blur(20px);
+      background: rgba(21,23,38,0.39);
+      border-radius: 32px;
+      border: 1px solid rgba(255,255,255,0.09);
+      color: #fff;
+      margin: 0 auto 0 auto;
+      max-width: 98vw;
+      padding: 2rem 0 1.2rem 0;
+      position: relative;
       text-align: center;
-      width: auto;
-      box-sizing: border-box;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08), 0 8px 16px rgba(0,0,0,0.04);
+      animation: slideInUp 1s ease-out 1s both;
+      z-index: 3;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(50px);
     }
-  }
+    .is-preload #footer {
+      animation: none !important;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    @keyframes slideInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.7rem 0 0.7rem 0;
+      background: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .footer-logo img {
+      width: 300px;
+      height: 175px;
+      max-width: 95vw;
+      max-height: 240px;
+      object-fit: contain;
+      background: none;
+      box-shadow: none;
+      display: block;
+      transition: transform 0.3s, filter 0.3s;
+      filter: none;
+      border-radius: 0;
+      border: none;
+      padding: 0;
+    }
+    .footer-logo img:hover {
+      transform: scale(1.07);
+      filter: brightness(1.12) contrast(1.12) drop-shadow(0 4px 12px rgba(79,142,247,0.15));
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.1rem;
+      margin: 0 0 1.2rem 0;
+      padding: 0;
+      list-style: none;
+    }
+    .icons li {
+      display: inline-block;
+      margin: 0;
+    }
+    .icons li a {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5em;
+      height: 2.5em;
+      font-size: 1.25em;
+      background: rgba(255,255,255,0.04);
+      border: 1.2px solid rgba(255,255,255,0.06);
+      color: #fff;
+      text-decoration: none;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+    .icons li a:focus { outline: none; }
+    .icons li a .label { display: none; }
+    .icons li a::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%; width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.09), transparent);
+      transition: left 0.5s;
+    }
+    .icons li a:hover {
+      transform: translateY(-3px) scale(1.12);
+      box-shadow: 0 10px 25px rgba(79,142,247,0.14);
+      background: rgba(30,64,175,0.12);
+      border-color: #4f8ef7;
+      color: #b6d6ff;
+    }
+    .icons li a:hover::before { left: 100%; }
+    .icons li a i {
+      display: block;
+      margin: 0 auto;
+      font-size: inherit;
+      line-height: 1;
+      width: 1em;
+      text-align: center;
+    }
+    .certifications {
+      margin: 0.7rem 0 0.2rem 0;
+      text-align: center;
+      animation: fadeInUp 1s ease-out 1.2s both;
+    }
+    .certifications h3 {
+      color: rgba(255,255,255,0.9);
+      font-family: 'Outfit', 'Inter', sans-serif;
+      font-size: 1.13em;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+    .badges {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.1rem;
+      margin: 0;
+    }
+    .badges + div {
+      margin-top: 2.2rem; /* More space from badges to button */
+    }
+    .badge {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.03);
+      border: 1.2px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      color: inherit;
+      cursor: pointer;
+      display: inline-block;
+      overflow: hidden;
+      padding: 0.5rem;
+      position: relative;
+      text-decoration: none;
+    }
+    .badge img {
+      height: 48px;
+      width: 48px;
+      object-fit: contain;
+      transition: transform 0.3s, filter 0.3s;
+      filter: brightness(1.1) contrast(1.05);
+      background: rgba(255,255,255,0.03);
+      border-radius: 6px;
+      display: block;
+    }
+    .badge:hover {
+      transform: translateY(-4px) scale(1.08);
+      background: rgba(255,255,255,0.08);
+      border-color: #4f8ef7;
+      box-shadow: 0 10px 24px rgba(79,142,247,0.16);
+    }
+    .badge:hover img {
+      transform: scale(1.13);
+      filter: brightness(1.14) contrast(1.11);
+    }
+    .badge::before {
+      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.05), transparent);
+      content: '';
+      height: 100%;
+      left: -100%;
+      position: absolute;
+      top: 0;
+      transition: left 0.6s;
+      width: 100%;
+      z-index: 1;
+    }
+    .badge:hover::before { left: 100%; }
+    .view-more-btn {
+      display: inline-block;
+      padding: 0.53rem 1.12rem;
+      background: rgba(79,142,247,0.09);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 22px;
+      font-family: 'Outfit', 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.97em;
+      border: 1px solid rgba(79,142,247,0.09);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 2px 10px rgba(79,142,247,0.05);
+      position: relative;
+      overflow: hidden;
+      margin-top: 0.01em;
+    }
+    .view-more-btn:hover {
+      background: rgba(79,142,247,0.14);
+      border-color: rgba(79,142,247,0.14);
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 8px 25px rgba(79,142,247,0.11);
+      color: #fff;
+    }
+    .view-more-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent);
+      transition: left 0.6s;
+    }
+    .view-more-btn:hover::before { left: 100%; }
+    .copyright {
+      color: rgba(255,255,255,0.76);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92em;
+      font-weight: 300;
+      list-style: none;
+      padding: 0;
+      margin: 1.3rem 0 0 0;
+      text-align: center;
+    }
+    .copyright li {
+      display: inline-block;
+      border-left: solid 1px rgba(255,255,255,0.19);
+      line-height: 1em;
+      margin: 0 0 0 0.75em;
+      padding: 0 0 0 0.75em;
+    }
+    .copyright li:first-child { border-left: 0; margin-left: 0; padding-left: 0; }
+    .copyright a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+    .copyright a:hover { color: #4f8ef7; }
+    @media (max-width: 900px) {
+      .container { padding: 1.2rem;}
+      header p, #skills, #footer { padding: 1.2rem;}
+      #footer { border-radius: 20px;}
+      .footer-logo img { width: 160px; height: 90px; }
+      .badges { gap: 0.6rem; }
+      .badge img { width: 36px; height: 36px; }
+      .icons li a { width: 2em; height: 2em; font-size: 1em; }
+    }
+    @media (max-width: 600px) {
+      .container { padding: 0.7rem; margin-top: 60px; }
+      body, p { font-size: 1.04em; line-height: 1.43; }
+      header p { padding: 1.1rem; }
+      h1 { padding: 0 0.7rem; margin-bottom: 1rem; }
+      #skills, #footer { padding: 0.7rem; border-radius: 12px;}
+      .footer-logo img { width: 100px; height: 55px; }
+      .badges { gap: 0.3rem; }
+      .badge img { width: 28px; height: 28px; }
+      .certifications h3 { font-size: 1.0em;}
+      .copyright { font-size: 0.8em; }
+      .icons { gap: 1.1rem; }
+      .icons li a { width: 1.7em; height: 1.7em; font-size: 0.96em;}
+    }
+    #old-site-btn {
+      position: fixed;
+      top: 24px;
+      right: 32px;
+      z-index: 1000;
+      background: rgba(79,142,247,0.08);
+      color: #fff;
+      font-family: 'Outfit', 'Inter', 'Poppins', sans-serif;
+      font-weight: 600;
+      padding: 0.7em 1.6em;
+      border-radius: 2em;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(79,142,247,0.08);
+      transition: background 0.2s;
+      font-size: 1em;
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+    }
+    #old-site-btn:hover { background: rgba(51,118,204,0.12); }
+    @media (max-width:600px) {
+      #old-site-btn {
+        top: 15px; right: 15px; left: 15px;
+        font-size: 0.85em; padding: 0.6em 1em;
+        text-align: center; width: auto; box-sizing: border-box;
+      }
+    }
   </style>
-	</head>
-	<body class="is-preload">
-		<!-- Top right corner button -->
-		<a href="https://moonim.me" target="_blank" rel="noopener noreferrer" id="old-site-btn">
-  		Having Loading issue? Visit old site
-		</a>
-		<div class="container">
-<!-- Header -->
-			<header id="header">
-				<h1>About me</h1>
-				<p>
-				Hi, I’m Mubtasim Moonim Khan from Bangladesh. I enjoy exploring how technology works behind the scenes—whether that’s managing servers, optimizing setups, or building projects to improve performance. I’m an SSC 2026 candidate with a strong interest in cybersecurity, operating system configurations, and server management. Occasionally, I use WordPress to quickly deploy websites or test ideas.
-				<br><br>
-				I’m always listening to music—whether I’m working, relaxing, or exploring new artists. I love modern sounds in pop, EDM, and chill R&B, with favorites like The Weeknd, Marshmello, Madison Beer, and Luísa Sonza. I’m also a passionate Formula 1 fan and proudly support Red Bull Racing.
-				<br><br>
-				I’m always open to learning new skills, collaborating with others, and contributing wherever I can. Looking ahead, I plan to deepen my expertise in cybersecurity and other tech-related fields.
-				</p>
-			</header>
-
-<!-- Skills in Progress Section -->
-<section id="skills" style="max-width:1200px;margin:0 auto 2rem auto;padding:2.5rem;background:rgba(255,255,255,0.08);border-radius:32px;border:1px solid rgba(255,255,255,0.15);box-shadow:0 20px 40px rgba(0,0,0,0.1),0 8px 16px rgba(0,0,0,0.08);backdrop-filter:blur(20px);font-family:'Inter','Poppins',sans-serif;animation:fadeInUp 1s ease-out 0.3s both;" class="fadeInUp">
-  <h2 style="font-family:'Outfit','Inter',sans-serif;font-weight:700;letter-spacing:-0.02em;margin-top:0;text-shadow:0 2px 4px rgba(0,0,0,0.1);">Skills in Progress</h2>
-  <ul style="font-size:1.1em;line-height:1.7;margin-bottom:1.5em;">
-    <li><strong>Python Programming</strong> — Improving coding proficiency and building projects</li>
-    <li><strong>Cybersecurity Basics</strong> — Studying network security, vulnerabilities, and ethical hacking</li>
-    <li><strong>HTML (Web Development)</strong> — Beginning to learn website structure and design</li>
-    <li><strong>Server Management & Tinkering</strong> — Gaining hands-on experience with hosting, servers, and Linux</li>
-    <li><strong>English Communication</strong> — Working on advanced writing and speaking skills</li>
-  </ul>
-  <div style="font-size:1.05em;"><strong>On the Radar:</strong><br>Rust Language — Planning to start learning soon</div>
-</section>
-
-		<!-- Signup Form -->
-			
-
-		<!-- Footer -->
-		<footer id="footer">
-			<!-- Social Media Links -->
-			<ul class="icons">
-				<li><a href="https://x.com/MubtasimK" target="_blank" rel="noopener noreferrer">
-					<i class="fab fa-twitter"></i>
-					<span class="label">Twitter</span>
-				</a></li>
-				<li><a href="https://www.instagram.com/moonim.applepie/" target="_blank" rel="noopener noreferrer">
-					<i class="fab fa-instagram"></i>
-					<span class="label">Instagram</span>
-				</a></li>
-				<li><a href="https://www.facebook.com/moonim.applepie/" target="_blank" rel="noopener noreferrer">
-					<i class="fab fa-facebook"></i>
-					<span class="label">Facebook</span>
-				</a></li>
-				<li><a href="https://github.com/Mubtasim2009" target="_blank" rel="noopener noreferrer">
-					<i class="fab fa-github"></i>
-					<span class="label">GitHub</span>
-				</a></li>
-				<li><a href="mailto:mubtasim32@gmail.com">
-					<i class="fas fa-envelope"></i>
-					<span class="label">Email</span>
-				</a></li>
-			</ul>
-			
-			<!-- Logo/Brand Image -->
-			<div class="brand-logo">
-				<img src="https://i.ibb.co/5XpqdCF4/Untitled-2-2.png" alt="Moonim Logo">
-			</div>
-			
-			<!-- Certifications -->
-			<div class="certifications">
-				<h3>Certifications & Achievements</h3>
-				<div class="badges">
-					<a href="https://www.credly.com/badges/07e30f3e-e251-4f4e-8199-d87b33505e4f/public_url" target="_blank" rel="noopener noreferrer" class="badge">
-						<img src="https://images.credly.com/size/680x680/images/e2d12302-10f9-40d4-8ff1-066a7008b61d/blob" alt="Certification Badge">
-					</a>
-					<a href="https://www.credly.com/badges/4d96f06f-ff36-48bf-afb7-db9505b06bd6/public_url" target="_blank" rel="noopener noreferrer" class="badge">
-						<img src="https://images.credly.com/size/680x680/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" alt="Certification Badge">
-					</a>
-					<a href="https://www.credly.com/badges/8b8d93b6-7257-4591-9c78-cd7a4aa40199/public_url" target="_blank" rel="noopener noreferrer" class="badge">
-						<img src="https://images.credly.com/size/220x220/images/19e742ef-13be-4d26-87ed-ac8f5fd0643c/image.png" alt="Certification Badge">
-					</a>
-					<a href="https://www.credly.com/badges/cb737c42-8fee-44c3-ab15-2de8f7683489/public_url" target="_blank" rel="noopener noreferrer" class="badge">
-						<img src="https://images.credly.com/size/160x160/images/50b96632-6cbb-40b7-ac0e-b83f49ff7f94/image.png" alt="Certification Badge">
-					</a>
-				</div>
-				<div style="margin-top: 1.5rem; text-align: center;">
-					<a href="https://moonim.me/certificates" target="_blank" rel="noopener noreferrer" class="view-more-btn">View More Certificates</a>
-				</div>
-			</div>
-			
-			<!-- Copyright Information -->
-			<ul class="copyright">
-				<li>&copy; Muhammad Mubtasim Moonim Khan</li>
-				<li><a href="https://cloudflare.com" target="_blank" rel="noopener noreferrer">[Hosted by Cloudflare Pages]</a></li>
-				<li>Credits: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
-			</ul>
-		</footer>
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</head>
+<body class="is-preload">
+  <!-- BG Slideshow -->
+  <div id="bg"></div>
+  <!-- Top right corner button -->
+  <a href="https://moonim.me" target="_blank" rel="noopener noreferrer" id="old-site-btn">
+    Having Loading issue? Visit old site
+  </a>
+  <div class="container">
+    <!-- Header -->
+    <header id="header">
+      <h1>About me</h1>
+      <p>
+        Hi, I’m Mubtasim Moonim Khan from Bangladesh. I enjoy exploring how technology works behind the scenes—whether that’s managing servers, optimizing setups, or building projects to improve my skills.<br><br>
+        I’m always listening to music—whether I’m working, relaxing, or exploring new artists. I love modern sounds in pop, EDM, and chill R&B, with favorites like The Weeknd, Marshmello, Madison Beer, and more.<br><br>
+        I’m always open to learning new skills, collaborating with others, and contributing wherever I can. Looking ahead, I plan to deepen my expertise in cybersecurity and other tech-related fields.
+      </p>
+    </header>
+    <!-- Skills in Progress Section -->
+    <section id="skills">
+      <h2>Skills in Progress</h2>
+      <ul>
+        <li><strong>Python Programming</strong> — Improving coding proficiency and building projects</li>
+        <li><strong>Cybersecurity Basics</strong> — Studying network security, vulnerabilities, and ethical hacking</li>
+        <li><strong>HTML (Web Development)</strong> — Beginning to learn website structure and design</li>
+        <li><strong>Server Management & Tinkering</strong> — Gaining hands-on experience with hosting, servers, and Linux</li>
+        <li><strong>English Communication</strong> — Working on advanced writing and speaking skills</li>
+      </ul>
+      <div><strong>On the Radar:</strong><br>Rust Language — Planning to start learning soon</div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="https://i.ibb.co/5XpqdCF4/Untitled-2-2.png" alt="Moonim Logo">
+      </div>
+      <ul class="icons">
+        <li><a href="https://x.com/MubtasimK" target="_blank" rel="noopener noreferrer" title="Twitter">
+          <i class="fab fa-x-twitter"></i>
+          <span class="label">Twitter</span>
+        </a></li>
+        <li><a href="https://www.instagram.com/moonim.applepie/" target="_blank" rel="noopener noreferrer" title="Instagram">
+          <i class="fab fa-instagram"></i>
+          <span class="label">Instagram</span>
+        </a></li>
+        <li><a href="https://www.facebook.com/moonim.applepie/" target="_blank" rel="noopener noreferrer" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+          <span class="label">Facebook</span>
+        </a></li>
+        <li><a href="https://github.com/Mubtasim2009" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <i class="fab fa-github"></i>
+          <span class="label">GitHub</span>
+        </a></li>
+        <li><a href="mailto:mubtasim32@gmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+          <span class="label">Email</span>
+        </a></li>
+      </ul>
+      <div class="certifications">
+        <h3>Certifications & Achievements</h3>
+        <div class="badges">
+          <a href="https://www.credly.com/badges/07e30f3e-e251-4f4e-8199-d87b33505e4f/public_url" target="_blank" rel="noopener noreferrer" class="badge">
+            <img src="https://images.credly.com/size/680x680/images/e2d12302-10f9-40d4-8ff1-066a7008b61d/blob" alt="Certification Badge">
+          </a>
+          <a href="https://www.credly.com/badges/4d96f06f-ff36-48bf-afb7-db9505b06bd6/public_url" target="_blank" rel="noopener noreferrer" class="badge">
+            <img src="https://images.credly.com/size/680x680/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" alt="Certification Badge">
+          </a>
+          <a href="https://www.credly.com/badges/8b8d93b6-7257-4591-9c78-cd7a4aa40199/public_url" target="_blank" rel="noopener noreferrer" class="badge">
+            <img src="https://images.credly.com/size/220x220/images/19e742ef-13be-4d26-87ed-ac8f5fd0643c/image.png" alt="Certification Badge">
+          </a>
+          <a href="https://www.credly.com/badges/cb737c42-8fee-44c3-ab15-2de8f7683489/public_url" target="_blank" rel="noopener noreferrer" class="badge">
+            <img src="https://images.credly.com/size/160x160/images/50b96632-6cbb-40b7-ac0e-b83f49ff7f94/image.png" alt="Certification Badge">
+          </a>
+        </div>
+        <div>
+          <a href="https://moonim.me/certificates" target="_blank" rel="noopener noreferrer" class="view-more-btn">View More Certificates</a>
+        </div>
+      </div>
+      <ul class="copyright">
+        <li>&copy; Muhammad Mubtasim Moonim Khan</li>
+        <li><a href="https://cloudflare.com" target="_blank" rel="noopener noreferrer">[Hosted by Cloudflare Pages]</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script>
+    // BG Slideshow with crossfade
+    (function(){
+      var settings = {
+        images: {
+          'https://images.unsplash.com/photo-1749680287741-243118ed6b2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D': 'center',
+          'https://images.unsplash.com/photo-1678203699291-253ab7a4d6d2?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D': 'center',
+          'https://images.unsplash.com/photo-1749680920901-03fd16468019?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D': 'center'
+        },
+        delay: 6000
+      };
+      var pos = 0, lastPos = 0, $wrapper, $bgs = [], $bg, k;
+      $wrapper = document.getElementById('bg');
+      for (k in settings.images) {
+        $bg = document.createElement('div');
+        $bg.style.backgroundImage = 'url("' + k + '")';
+        $bg.style.backgroundPosition = settings.images[k];
+        $wrapper.appendChild($bg);
+        $bgs.push($bg);
+      }
+      function crossfadeBG(next, last) {
+        if (next === last) return;
+        $bgs[next].classList.add('visible', 'top');
+        setTimeout(function() {
+          $bgs[last].classList.remove('visible', 'top');
+        }, 1200); // match CSS transition
+      }
+      $bgs[pos].classList.add('visible', 'top');
+      if ($bgs.length > 1) {
+        setInterval(function() {
+          lastPos = pos;
+          pos = (pos + 1) % $bgs.length;
+          crossfadeBG(pos, lastPos);
+        }, settings.delay);
+      }
+    })();
+    // Play initial animations on page load.
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.body.classList.remove('is-preload');
+      }, 100);
+    });
+  </script>
+</body>
 </html>
